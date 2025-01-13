@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function arti(){
+            let resultado
+            let articulo=prompt("Introduce el articulo que ha escogido")
+            let precio=parseInt(prompt("Introduce el precio del articulo"))
+            let cantidad=parseInt(prompt("Introduce la cantidad que llevas"))
+            let total=precio*cantidad;
+            return "El precio que debe pagar por "+cantidad+" "+articulo+" es de "+total+"€";
+
+        }
+        let resultado=arti();
+        document.write(resultado);
+    </script>
+</body>
+</html>

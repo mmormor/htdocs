@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buscarSubcadena(cadena1,cadena2){
+            let resultado;
+            if(cadena1.indexOf(cadena2) !=-1){
+                resultado="Se encontro la palabra "+cadena2 +" en"+"<br>"+cadena1;
+            }else{
+                resultado="No coinciden las cadenas";
+            }return resultado
+
+        }
+        cadena1=prompt("Introduce una cadena");
+        cadena2=prompt("Introduce la segunda cadena");
+       let resultadoFinal=buscarSubcadena(cadena1,cadena2)
+       document.write(resultadoFinal);
+        </script>
+</body>
+</html>

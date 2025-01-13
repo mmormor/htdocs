@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Bloque1Volumen2"
+		},
+		{
+			"path": "../Bloque1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bloque1Volumen3"
+	}
+}

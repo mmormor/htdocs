@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pala(){
+            let resultado
+            let palabra=prompt("Inrodcue la palabra mesa ,perro,casa o gato para traducrila al ingles")
+            switch (palabra) {
+                case "casa":resultado="house"
+            
+            break;
+                case "perro":resultado="dog"
+                break;
+                case "gato":resultado="cat"
+                break;
+                case "mesa":resultado="table"
+                break;
+                default:
+                resultado="La palabra introducida no es mesa,perro gato o mesa";
+            
+        }
+        return resultado
+    }let resultado=pala();
+    document.write(resultado);
+    </script>
+</body>
+</html>

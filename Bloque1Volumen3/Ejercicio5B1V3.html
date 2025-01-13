@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cantidadArticuloPrecioTotal(articulo,cantidad,precio)
+    {
+        return "El precio total por "+articulo+ " "+cantidad+ " es de "+precioTotal+"€";
+    }
+        
+        articulo=prompt("Introduce el articulo que has escogido");
+        cantidad=parseInt(prompt("Introduce la cantidad que llevas de ese producto"));
+        precio=parseInt(prompt("Introduce el precio del articulo que has escogido por unidad"));
+        let precioTotal=precio*cantidad;
+      
+    let resultado=cantidadArticuloPrecioTotal(cantidad,articulo,precioTotal);
+    document.write(resultado)
+    </script>
+</body>
+</html>

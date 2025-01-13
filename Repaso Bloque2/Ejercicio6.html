@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num(){
+            let resultado=0;
+            let num=parseInt(prompt("Introduce un numero entre el 1 y el 10"))
+            for(valor=0;valor<=12;valor++){
+                if(num>=1 && num<=10){
+                    resultado=resultado+num+"x"+valor+"="+num*valor+"<br>";
+                }else{resultado="El numero introducido no esta entre 1 y 10"}
+            }   
+            return resultado
+
+        }
+        let resultado=num();
+        document.write(resultado);
+    </script>
+</body>
+</html>

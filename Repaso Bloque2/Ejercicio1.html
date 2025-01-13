@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra=prompt("Introduce la palabra mesa,perro,casa o gato para traducirla")
+         function tradPal() {
+            let resultado
+            switch(palabra){
+                case "mesa":resultado="Mesa en ingles es table"
+                break;
+                case "perro":resultado="Perro en ingles es dog"
+                break;
+                case "casa":resultado="Casa en ingles es house"
+                break;
+                case "gato":resultado="Gato en ingles es cat"
+                break;
+                default:resultado="La palabra introducida debe ser perro,gato,mesa o casa"
+            }
+            return resultado
+        } let resultado=tradPal();
+        document.write(resultado);
+
+        
+    </script>
+</body>
+</html>

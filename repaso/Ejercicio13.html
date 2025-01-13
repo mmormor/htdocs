@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num(){
+            let resultado
+            let num1=parseInt(prompt("Introduce un numero"))
+            let num2=parseInt(prompt("Introduce un numero"))
+            let num3=parseInt(prompt("Introduce un numero"))
+            if(num1==num2 && num2==num3){
+                let suma=(num1+num2)*num3;
+                resultado=
+                "La suma del primer numero mas "+
+                "el segundo y este resultado multiplicado "+
+                "por el tecero es de "+suma;
+            }else {resultado="Los numeros introducidos no coinciden"}
+            return resultado
+        }let resultado=num();
+        document.write(resultado);
+    </script>
+</body>
+</html>

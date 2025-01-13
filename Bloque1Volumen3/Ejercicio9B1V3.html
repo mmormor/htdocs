@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function promedioNota()
+        {
+            let nota=0;contador=0;promedio=0;sumaNota=0;
+            let resultado
+                for(contador=1;contador<4;contador++)
+                {
+                    nota=parseInt(prompt("Introduce las nota"));
+                    
+                    sumaNota=sumaNota+nota;
+                }
+            promedio=sumaNota/3;
+                if (promedio>=4)
+                {   
+                    resultado="regular"
+                } else
+                {
+                    resultado="reprobado"
+                }
+                return resultado
+        }
+        let resultado=promedioNota();
+        document.write(resultado)
+    </script>
+</body>
+</html>

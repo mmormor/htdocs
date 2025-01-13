@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function censo(){
+            let resultado;
+            let numDoc;
+            let acumulador=0;
+            let masculino=0;
+            let mujer=0;
+            let varon_16_65=0;
+            do{
+                numDoc=parseInt(prompt("Introduce tu numero de documento"))
+                if(numDoc==0){
+                    alert("Has introducido el valor 0 por lo que se acaba aqui")
+                }else{
+                    let edad=parseInt(prompt("Introduce tu edad"))
+                    let sexo=prompt("Introduce tu sexo(masculino o femenino)");
+                    acumulador=acumulador+1;
+                     if(sexo=="masculino"){
+                     masculino=masculino+1;
+                }else if(sexo=="femenino"){
+                   mujer=mujer+1
+                }
+                if(sexo=="masculino" && edad>=16 && edad<=65){
+                    varon_16_65=varon_16_65+1
+                }
+            }}while(numDoc!=0);
+            return "El numero de personas censadas es de "+acumulador+"<br>"+
+            "El numero de varones es de "+masculino+"<br>"+
+            "El numero de varones entre 16 y 65 años es de "+varon_16_65+"<br>"+
+            "El numero de muejeres es de "+mujer}
+            let resultado=censo();
+        document.write(resultado)
+    </script>
+</body>
+</html>

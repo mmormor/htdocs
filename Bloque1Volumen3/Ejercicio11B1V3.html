@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function nume(num)
+        {   let resultado
+                if (num > 0) {
+            resultado="El número introducido es positivo";
+            } else if (num == 0) {
+                resultado="El número introducido es 0";
+            } else {
+                resultado="El número introducido es negativo";
+            }
+                    return resultado
+        }
+        num = parseInt(prompt("Introduce un valor"));
+
+        
+        let resultado=nume(num);
+        document.write(resultado);
+    
+</script>
+
+    </script>
+</body>
+</html>

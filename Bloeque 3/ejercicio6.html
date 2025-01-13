@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function pizzas(){
+            let seleccion = document.getElementById('select1');
+            document.getElementById('texto1').value = seleccion.options[seleccion.selectedIndex].value;   
+        }
+        function cantidad(){
+            let seleccion = document.getElementById('select2');
+            document.getElementById('texto2').value = seleccion.options[seleccion.selectedIndex].value;
+        }
+        function precio(){
+            let seleccion = document.getElementById('select1');
+            let precio = seleccion.options[seleccion.selectedIndex].value;
+            let cantidad = document.getElementById('texto2').value;
+            let total = precio*cantidad
+            document.getElementById('texto3').value = total;}
+        </script>
+</head>
+<body>
+    <form>
+        <select id="select1" onChange="pizzas()">
+            <option value="0">Elegir pizza</option>
+            <option value="6">jamon y queso</option>
+            <option value="4">queso</option>
+            <option value="10">especial</option>
+        </select>
+        <p>Precio por unidad : <input type="text" id="texto1"></p>
+        <p>Cantidad:<input type='text' id='texto2'></p>
+        <p>Precio Total:<input type='text' id='texto3'></p>
+        <input type="button" value="Mostrar" onclick="precio()">
+    </form>
+</body>
+</html>

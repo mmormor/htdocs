@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero1='', numero2=''
+            function sumanumeros()
+                {  
+                    numero1=parseInt(prompt("Introduce el primer numero"));
+                    numero2=parseInt(prompt("Introduce el segundo número"));
+                    suma= numero1+numero2
+                        return("La suma es " +suma);}
+        let resultadosuma=sumanumeros();
+        document.write(resultadosuma);
+            function restanumeros(){
+                    numero1=parseInt(prompt("Introduce el primer numero"));
+                    numero2=parseInt(prompt("Introduce el segundo número"));
+        document.write("<br>")
+                    resta= numero1-numero2
+                        return("La resta es " +resta);}
+        let resultadoresta=restanumeros();
+        document.write(resultadoresta);
+        document.write("<br>")
+            function productonumeros(){
+                    numero1=parseInt(prompt("Introduce el primer numero"));
+                    numero2=parseInt(prompt("Introduce el segundo número"));
+                    producto= numero1*numero2
+                        return("El producto es " +producto);}
+        let resultadoproducto=productonumeros();
+        document.write(resultadoproducto);
+        document.write("<br>")
+            function divisionnumeros(){
+                    numero1=parseInt(prompt("Introduce el primer numero"));
+                    numero2=parseInt(prompt("Introduce el segundo número"));
+                    division= numero1/numero2
+                        return("La división es " +division);}
+        let resultadodivision=divisionnumeros();
+        document.write(resultadodivision);
+        document.write("<br>")
+            function resultado(){
+                        if(numero1>numero2)
+    {
+                        return("La suma es " +suma+" y la resta es " +resta);
+    }                   
+                        else
+    {                      
+                        return("Elproducto es " +producto+" y la división es " +division);}}
+
+let resultadofinal=resultado();
+document.write(resultadofinal);
+</script>
+</body>
+</html>

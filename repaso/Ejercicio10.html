@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num(){
+            let resultado
+            let num=parseInt(prompt("Introduce un numero de uno o dos digitos"))
+            if (num<0){
+                resultado="El numero debe de ser positivo"}
+                else if(num==0){
+                    resultado="El numero introducido es 0"
+                }
+                else if(num>=0 && num<10){
+                    resultado="El numero introducido es de 1 cifra"
+                }else if(num>=10 && num<100){
+                    resultado="El numero introducido es de 2 cifras"
+                }else {resultado="El numero introducido es de mas de dos cifras"}
+                return resultado
+            }let resultado=num();
+                document.write(resultado);
+        
+    </script>
+</body>
+</html>

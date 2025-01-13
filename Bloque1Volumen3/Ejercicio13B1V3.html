@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num(num1,num2,num3)
+        { let resultado
+                let sumaTotal=(num1+num2)*num3
+            if (num1!=num2)
+            {
+                resultado="Los números no coinciden"
+                    } 
+                else if(num2==num3)
+            {
+                resultado=sumaTotal
+                    
+            } else
+                {
+                    resultado="Los numeros que has introducido no coinciden"
+                }
+                return resultado
+        }       
+        
+            num1=parseInt(prompt("Introduce le valor del primer numero"))
+            num2=parseInt(prompt("Introduce le valor del segundo numero"))
+            num3=parseInt(prompt("Introduce le valor del tercero numero"))
+            
+            
+        
+        let resultado=num(num1,num2,num3);
+        document.write(resultado);
+    </script>
+</body>
+</html>

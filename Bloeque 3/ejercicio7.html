@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function mostrarDeportes() {
+            let deportesSeleccionados = [];
+            if (document.getElementById("futbol").checked) {
+                deportesSeleccionados.push("Fútbol");
+            }
+            if (document.getElementById("baloncesto").checked) {
+                deportesSeleccionados.push("Baloncesto");
+            }
+            if (document.getElementById("tenis").checked) {
+                deportesSeleccionados.push("Tenis");
+            }
+
+            alert("Deportes seleccionados: " + deportesSeleccionados.join(", "));
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="futbol"> Fútbol<br>
+    <input type="checkbox" id="baloncesto"> Baloncesto<br>
+    <input type="checkbox" id="tenis"> Tenis<br>
+    <button onclick="mostrarDeportes()">Mostrar Deportes</button>
+</body>
+</html>

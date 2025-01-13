@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Sueldos(Sueldo,añoAntig)
+        { let resultado
+            let Sueldo20=Sueldo*1.2;
+            let Sueldo5=Sueldo*1.05;
+            if (Sueldo < 500 && añoAntig >= 10){
+                resultado="El sueldo a pagar es " +Sueldo20 }
+            else if (Sueldo < 500 && añoAntig < 10){
+                resultado=" El sueldo a pagar es "+Sueldo5
+            }return resultado
+        }Sueldo=parseInt(prompt("Introduce tu sueldo"))
+        añoAntig=parseInt(prompt("Introuce los años de antiguedad"))
+        let resultado=Sueldos(Sueldo,añoAntig);
+        document.write(resultado)
+    </script>
+</body>
+</html>

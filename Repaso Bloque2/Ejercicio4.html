@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function valor(){
+            let resultado;
+            let acumulador=0;
+            let num;
+            do{
+                 num=parseInt(prompt("Introduce un valor"))
+                if (num==9999){
+                    alert("El numero introducido es 9999 por lo que se acaba aqui")
+                }
+                acumulador=acumulador+num
+                
+            }while( num !== 9999);
+            
+                acumulador+=-9999;
+                if(acumulador>0){
+                    resultado="El acumulador es "+acumulador+" por lo que es mayor que 0"
+                }
+                else if(acumulador<0){
+                    resultado="Ela cumulador es "+acumulador+" por lo que es menor que 0"}
+                    else if (acumulador==0){resultado="El acumualdor es "+acumulador+" por lo que es igual a 0"}
+                return resultado
+            }
+        let resultado=valor()
+        document.write(resultado);
+    </script>
+</body>
+</html>

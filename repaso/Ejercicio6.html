@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function clave(){
+            let resultado;
+            let clave=prompt("Introduce una clave");
+            let clave2=prompt("Introduce una clave");
+            if (clave==clave2){
+                resultado="Las claves que has introducido son iguales"
+            }
+            else{resultado="Las claves que has introducido son diferentes"}
+            return resultado
+        }
+        let resultado=clave();
+        document.write(resultado);
+    </script>
+</body>
+</html>
